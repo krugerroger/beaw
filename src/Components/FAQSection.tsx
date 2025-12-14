@@ -8,7 +8,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Comment puis-je réserver un rendez-vous ?",
-      answer: "Contactez moi via l'un de mes réseaux professionnels(Telegram ou Whatsapp) dans la section «Contact». C’est simple et rapide !"
+      answer: "Contactez moi via l'un de mes réseaux professionnels(Telegram ou Instagram) dans la section «Contact». C’est simple et rapide !"
     },
     {
       question: "Quels sont vos modes de paiement ?",

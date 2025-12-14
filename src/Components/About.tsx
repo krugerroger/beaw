@@ -108,7 +108,7 @@ export default function About() {
               <motion.p variants={item} className="">
                 Mon telegramme : @moreaubeatrice
 
-                Mon WhatsApp : +33757081623
+                Mon TikTok : @moreaubeatrice
 
                 Mon Instagram : beatrice_moreaufr
 

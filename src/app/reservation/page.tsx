@@ -312,7 +312,7 @@ const handlePackageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
                     <span className="label-text-alt text-sm">Photo de la recharge(Transcash, PCS, Néosurf)</span>
                   </label>
                   <div className="text-sm">
-                    Pour réverser via virement instantanée ou par Wero, merci de me contacter par WhatsApp au <span className='font-semibold text-[#25D366]'>+33 6 37 24 43 87</span> pour obtenir les informations nécessaires.
+                    Pour réverser via virement instantanée ou par Wero, merci de me contacter pour obtenir les informations nécessaires.
                   </div>
                 </div>
 
@@ -340,7 +340,7 @@ const handlePackageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         <div className="divider"></div>
         <div>
             <h2>Pour une reservation via virement ou Wero,</h2>
-            <p>Merci de me contacter par WhatsApp au <span className='font-semibold text-[#25D366]'>+33 6 37 24 43 87</span> ou par Telegram à        
+            <p>Merci de me contacter par Telegram à        
                 <a 
                   href="https://t.me/moreaubeatrice" 
                   className="text-[#0088CC] hover:bg-secondary hover:text-secondary-content px-6"
@@ -351,7 +351,7 @@ const handlePackageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         <div>
             <h2>Confirmation et rappel</h2>
             <ul>
-                <li> Envoie une confirmation immédiate après la réservation sur Whatsapp ou sur Telegram ou par email.</li>
+                <li> Envoie une confirmation immédiate après la réservation sur Telegram ou par email.</li>
                 <li> Un rappel sera envoyé 24 heures avant le rendez-vous.</li>
                 <li> Facturation : Envoie une facture détaillée après la réservation.</li>
                 <li> La réservation sera considérée comme confirmée uniquement après réception de la facture.</li>
