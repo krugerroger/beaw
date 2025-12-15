@@ -41,14 +41,14 @@ const ServiceCards = () => {
         "🔞 Plaisirs spécifiques avec respect & hygiène",
       ],
       price: [
-        { duration: "1 heure", amount: "150€" },
-        { duration: "1 heure 30", amount: "250€" },
-        { duration: "2 heures", amount: "300€" },
-        { duration: "3 heures", amount: "400€" },
-        { duration: "4 heures", amount: "550€" },
+        { duration: "1 heure", amount: "200€" },
+        { duration: "1 heure 30", amount: "300€" },
+        { duration: "2 heures", amount: "400€" },
+        { duration: "3 heures", amount: "500€" },
+        { duration: "4 heures", amount: "650€" },
         { duration: "Une nuit", amount: "1000€" },
-        { duration: "Journée entière", amount: "1200€" },
-        { duration: "Week-end", amount: "1500€" },
+        { duration: "Journée entière", amount: "1500€" },
+        { duration: "Week-end", amount: "2000€" },
       ]
     },
   ]
