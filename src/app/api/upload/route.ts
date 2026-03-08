@@ -1,12 +1,12 @@
 // app/api/submit-booking/route.ts
 
-import { supabaseServer } from "@/utils/supabaseServer"
+import { supabaseClient } from "@/utils/supabaseClient"
 import { NextResponse } from "next/server"
 
 export const dynamic = 'force-dynamic' // Important pour les uploads de fichiers
 
 export async function POST(request: Request) {
-  const supabase = supabaseServer
+  const supabase = supabaseClient
 
   try {
     const formData = await request.formData()
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       )
     }
 
-    // Vérification de la taille du fichier (max 5MB)
+    // Vérification de la Moreau du fichier (max 5MB)
     if (paymentProof.size > 5 * 1024 * 1024) {
       return NextResponse.json(
         { error: 'Le fichier est trop volumineux (max 5MB)' },
@@ -77,16 +77,16 @@ export async function POST(request: Request) {
 
     // Enregistrement dans la base de données
     const { data, error: dbError } = await supabase
-      .from('customers')
+      .from('customers_j')
       .insert({
         name: name,
         email: email,
-        meetDate: appointmentDate,
-        ticketProof: publicUrl,
+        meetdate: appointmentDate,
+        ticketproof: publicUrl,
         message: additionalMessage,
-        optionName: packageTitle,
-        optionDuration: packageDuration,
-        optionPrice: packagePrice,
+        optionname: packageTitle,
+        optionduration: packageDuration,
+        optionprice: packagePrice,
         status: 'pending'
       })
       .select()
