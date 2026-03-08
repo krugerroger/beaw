@@ -151,7 +151,7 @@ export default function Testimonials() {
 
               {/* Guillemet décoratif */}
               <div className="mb-2" style={{ color: '#be185d', fontSize: '2.5rem', lineHeight: 1, fontFamily: 'Georgia, serif' }}>
-                "
+                “
               </div>
 
               <blockquote className="text-base leading-relaxed italic" style={{ color: '#a1a1aa' }}>
@@ -170,7 +170,7 @@ export default function Testimonials() {
           className="text-center mt-14"
         >
           <p className="text-xs" style={{ color: '#3f3f46' }}>
-            * Tous les témoignages proviennent de rencontres réelles. Les prénoms ont été modifiés pour préserver l'anonymat.
+            * Tous les témoignages proviennent de rencontres réelles. Les prénoms ont été modifiés pour préserver l′anonymat.
           </p>
         </motion.div>
 

@@ -133,7 +133,7 @@ export default function BookingForm() {
                     Je reviendrai vers vous par email ou WhatsApp sous 24h pour confirmer notre rendez-vous.
                 </p>
                 <Link href="/" className="mt-8 btn border-none px-8 text-white font-bold" style={{ backgroundColor: '#db2777' }}>
-                    Retour à l'accueil
+                    Retour à l′accueil
                 </Link>
             </div>
         )
@@ -428,7 +428,7 @@ export default function BookingForm() {
                     </div>
 
                     <div className="mt-12 text-center text-sm max-w-2xl mx-auto italic" style={{ color: '#3f3f46' }}>
-                        "Le meilleur moyen de résister à la tentation est d'y céder." — Oscar Wilde
+                        “Le meilleur moyen de résister à la tentation est d′y céder.” — Oscar Wilde
                     </div>
                 </div>
             </section>

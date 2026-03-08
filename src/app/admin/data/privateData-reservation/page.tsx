@@ -1,13 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import { supabaseClient } from '@/utils/supabaseClient';
-import Image from 'next/image';
 import { 
-  RefreshCw, 
-  LogOut, 
-  Eye, 
+  RefreshCw,  
   User, 
   Clock, 
   CreditCard, 
@@ -36,9 +32,7 @@ interface Reservation {
 export default function AdminPage() {
   const [reservations, setReservations] = useState<Reservation[]>([]);
   const [loading, setLoading] = useState(false);
-  const [userEmail, setUserEmail] = useState<string>('');
-  const [authError, setAuthError] = useState<string>('');
-  const router = useRouter();
+//   const [authError, setAuthError] = useState<string>('');
 
   // Vérifier l'authentification et récupérer l'utilisateur
   // useEffect(() => {
@@ -95,7 +89,7 @@ export default function AdminPage() {
       console.log(`✅ ${data?.length || 0} réservations récupérées`);
       setReservations(data || []);
 
-    } catch (error: any) {
+    } catch (error) {
       console.error('❌ Erreur lors de la récupération:', error);
       alert('Erreur lors de la récupération des réservations');
     } finally {
@@ -103,19 +97,19 @@ export default function AdminPage() {
     }
   };
 
-  const handleLogout = async () => {
-    try {
-      console.log('🚪 Déconnexion...');
-      const { error } = await supabaseClient.auth.signOut();
-      if (error) throw error;
+//   const handleLogout = async () => {
+//     try {
+//       console.log('🚪 Déconnexion...');
+//       const { error } = await supabaseClient.auth.signOut();
+//       if (error) throw error;
       
-      console.log('✅ Déconnexion réussie');
-      router.push('/adminLogin');
-    } catch (error) {
-      console.error('❌ Erreur de déconnexion:', error);
-      alert('Erreur lors de la déconnexion');
-    }
-  };
+//       console.log('✅ Déconnexion réussie');
+//       router.push('/adminLogin');
+//     } catch (error) {
+//       console.error('❌ Erreur de déconnexion:', error);
+//       alert('Erreur lors de la déconnexion');
+//     }
+//   };
 
   const getStatusColor = (status: string) => {
     switch (status?.toLowerCase()) {
@@ -148,27 +142,27 @@ export default function AdminPage() {
   }
 
   // Si erreur d'authentification
-  if (authError) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="text-center max-w-md">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
-            <AlertCircle className="w-8 h-8 text-red-600" />
-          </div>
-          <h2 className="text-xl font-semibold text-slate-700 mb-2">
-            Erreur d'authentification
-          </h2>
-          <p className="text-slate-600 mb-6">{authError}</p>
-          <button
-            onClick={() => router.push('/adminLogin')}
-            className="btn btn-primary"
-          >
-            Retour à la connexion
-          </button>
-        </div>
-      </div>
-    );
-  }
+//   if (authError) {
+//     return (
+//       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
+//         <div className="text-center max-w-md">
+//           <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+//             <AlertCircle className="w-8 h-8 text-red-600" />
+//           </div>
+//           <h2 className="text-xl font-semibold text-slate-700 mb-2">
+//             Erreur d'authentification
+//           </h2>
+//           <p className="text-slate-600 mb-6">{authError}</p>
+//           <button
+//             onClick={() => router.push('/adminLogin')}
+//             className="btn btn-primary"
+//           >
+//             Retour à la connexion
+//           </button>
+//         </div>
+//       </div>
+//     );
+//   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-6">
@@ -179,12 +173,12 @@ export default function AdminPage() {
             <h1 className="text-2xl md:text-3xl font-bold bg-black bg-clip-text text-transparent">
               Tableau de bord
             </h1>
-            <div className="flex items-center gap-2 mt-2">
+            {/* <div className="flex items-center gap-2 mt-2">
               <User className="w-4 h-4 text-slate-500" />
               <p className="text-slate-600 text-sm">
                 Connecté en tant que: <span className="font-medium text-slate-800">{userEmail}</span>
               </p>
-            </div>
+            </div> */}
           </div>
           
           {/* <div className="flex flex-wrap gap-2 w-full md:w-auto">
@@ -346,7 +340,7 @@ export default function AdminPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                           </svg>
-                          Voir l'image
+                          Voir l′image
                         </a>
                       ) : (
                         <span className="text-slate-400 text-sm">Aucune image</span>
@@ -433,7 +427,7 @@ export default function AdminPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                           </svg>
-                          Voir l'image
+                          Voir l′image
                         </a>
               </div>
 
