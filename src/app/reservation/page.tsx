@@ -160,7 +160,7 @@ export default function BookingForm() {
                             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
                                 <Image
                                     src="/bea_hero.jpeg"
-                                    alt="Brunella Moreau"
+                                    alt="Béatrice Moreau"
                                     fill
                                     sizes="(min-width: 1024px) 33vw, 100vw"
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -171,7 +171,7 @@ export default function BookingForm() {
                                         <ShieldCheck className="w-4 h-4" style={{ color: '#f472b6' }} />
                                         <span className="text-xs uppercase tracking-widest" style={{ color: '#d4d4d8' }}>Discrétion garantie</span>
                                     </div>
-                                    <h3 className="text-2xl font-semibold">Brunella Moreau</h3>
+                                    <h3 className="text-2xl font-semibold">Béatrice Moreau</h3>
                                     <p className="text-sm" style={{ color: '#a1a1aa' }}>Votre élégance, ma priorité.</p>
                                 </div>
                             </div>

@@ -158,7 +158,7 @@ export default function Gallery() {
                   className="absolute bottom-2 right-2 px-2 py-0.5 rounded text-xs"
                   style={{ backgroundColor: 'rgba(0,0,0,0.7)', color: 'rgba(255,255,255,0.6)' }}
                 >
-                  ©{new Date().getFullYear()} Béatrice Meyer
+                  ©{new Date().getFullYear()} Béatrice Moreau
                 </div>
               </div>
 
@@ -244,7 +244,7 @@ export default function Gallery() {
                   className="absolute bottom-4 right-4 px-3 py-1 rounded-lg text-sm backdrop-blur-sm"
                   style={{ backgroundColor: 'rgba(0,0,0,0.75)', color: 'rgba(255,255,255,0.65)' }}
                 >
-                  ©{new Date().getFullYear()} Béatrice Meyer
+                  ©{new Date().getFullYear()} Béatrice Moreau
                 </div>
               </div>
 
