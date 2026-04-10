@@ -162,6 +162,7 @@ export default function BookingForm() {
                                     src="/bea_hero.jpeg"
                                     alt="Béatrice Moreau"
                                     fill
+                                    unoptimized
                                     sizes="(min-width: 1024px) 33vw, 100vw"
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />

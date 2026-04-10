@@ -134,6 +134,7 @@ export default function Gallery() {
                 src={image.src}
                 alt={image.alt}
                 fill
+                unoptimized
                 className="object-cover select-none transition-transform duration-500 hover:scale-105"
                 draggable="false"
                 onContextMenu={(e) => e.preventDefault()}
@@ -228,6 +229,7 @@ export default function Gallery() {
                 className="object-contain select-none"
                 draggable="false"
                 priority
+                unoptimized
                 quality={100}
                 onContextMenu={(e) => e.preventDefault()}
               />
