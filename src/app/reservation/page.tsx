@@ -41,15 +41,16 @@ export default function BookingForm() {
                 const defaultOffer: Offer = {
                     title: "Rendez-vous galant",
                     price: [
-                        { duration: "30 minutes", amount: "50€" },
-                        { duration: "1 heure", amount: "150€" },
-                        { duration: "1 heure 30", amount: "240€" },
-                        { duration: "2h00", amount: "300€" },
-                        { duration: "3h00", amount: "400€" },
-                        { duration: "Après-midi détente (4h00)", amount: "550€" },
-                        { duration: "Soirée délice (20h-00h)", amount: "720€" },
-                        { duration: "Soirée torride (20h-01h)", amount: "720€" },
-                        { duration: "Nuit complète (20h-08h)", amount: "800€" }
+                        { duration: "30 minutes", amount: "100€" },
+                        { duration: "1 heure", amount: "200€" },
+                        { duration: "1 heure 30", amount: "300€" },
+                        { duration: "2h00", amount: "400€" },
+                        { duration: "3h00", amount: "500€" },
+                        { duration: "Après-midi détente (4h00)", amount: "650€" },
+                        { duration: "Soirée torride (20h-01h)", amount: "850€" },
+                        { duration: "Nuit complète (20h-08h)", amount: "1000€" },
+                        { duration: "Journée entière (24h)", amount: "1500€" },
+                        { duration: "Week-end - Evasion complice (2 jours/1 nuit)", amount: "2000€" },
                     ]
                 }
                 setOffer(defaultOffer)
