@@ -31,7 +31,7 @@ export default function Contact() {
     },
     {
       href: CONTACTS.telegramChannel,
-      label: "Telegram",
+      label: "Canal Telegram",
       color: "#29b6f6",
       borderColor: "#0c3a52",
       hoverBorder: "#29b6f6",
