@@ -107,11 +107,7 @@ export default function About() {
               </motion.p>
 
               <motion.p variants={item} className="">
-                Mon telegramme : @moreaubeatrice
-
-                Mon TikTok : @moreaubeatrice
-
-                Mon Instagram : beatrice_moreaufr
+                Mon telegramme : {CONTACTS.telegramUsername}
 
                 À très vite entre mes draps… et entre mes jambes 💋🍒
               </motion.p>
